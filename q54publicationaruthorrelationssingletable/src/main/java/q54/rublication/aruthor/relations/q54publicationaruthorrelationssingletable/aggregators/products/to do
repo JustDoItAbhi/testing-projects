@@ -1,0 +1,31 @@
+Intermediate Aggregation Questions:
+E-commerce System:
+
+Create a Customer class that contains multiple Order objects (Aggregation).
+Each Order should have attributes: orderId, amount, and status.
+Implement a method in Customer to calculate the total amount spent.
+University Management System:
+
+Create a University class that contains multiple Department objects.
+Each Department has multiple Professor objects.
+Implement a method to count the total number of professors in the university.
+Advanced Aggregation Questions:
+Vehicle Management System:
+
+Create a Garage class that contains a list of Car objects.
+Each Car should have attributes: model, brand, and mileage.
+Implement a method in Garage to find all cars with mileage greater than 20 km/l.
+E-learning Platform:
+
+Create a Course class that contains multiple Student objects.
+Each Student has attributes: name, email, and marks.
+Implement a method in Course to find the student with the highest marks.
+Would you like a sample solution for any of these questions? 😊
+
+
+
+
+
+
+
+
