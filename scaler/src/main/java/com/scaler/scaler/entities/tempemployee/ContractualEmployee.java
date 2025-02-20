@@ -1,14 +1,16 @@
-package com.scaler.scaler.entities;
+package com.scaler.scaler.entities.tempemployee;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Inheritance;
-import jakarta.persistence.InheritanceType;
+import com.scaler.scaler.entities.Employee;
+import jakarta.persistence.*;
 
+//@Inheritance(strategy = InheritanceType.JOINED)
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-public class ContractualEmployee extends Employee {
-
+@Table(name = "CONTRACTUAL_EMPLOYEE")
+public abstract class ContractualEmployee extends Employee {
+//    @Id
+    @Column(name = "ALIAS", unique = true, nullable = false)
     private String alias;
-
+    @Column(name = "HOURLY_RENUMERATION")
     private  Double hourlyRenumeration;
+
 }
